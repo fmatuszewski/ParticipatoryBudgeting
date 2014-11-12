@@ -1,0 +1,16 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr">
+<head>
+  <title>My page</title>
+  <meta name="description" content="This is my page." />
+  <script type="text/javascript" src="http://www.panoramio.com/wapi/wapi.js?v=1&amp;hl=pl"></script>
+</head>
+<body>
+<div id="div_photo_ex" style="float: right; margin: 10px 15px"></div>
+<script type="text/javascript">
+  var photo_ex_widget = new panoramio.PhotoWidget(
+    'div_photo_ex', { 'rect':{'sw':{'lat':50,  'lng':19},'ne':{'lat':51,  'lng':20}}}, {'width': 450, 'height': 300,croppedPhotos:true});
+  photo_ex_widget.setPosition(0);
+</script>
+</body>
+</html>
